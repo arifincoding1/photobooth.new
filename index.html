@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📸 photobooth studio TI</h1>
+
+<video id="video" autoplay playsinline></video>
+
+<div class="controls">
+    <select id="filter">
+        <option value="none">Normal</option>
+        <option value="grayscale(100%)">Grayscale</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="brightness(110%) contrast(110%)">Beauty Light</option>
+    </select>
+
+    <input type="text" id="watermark" placeholder="Nama kamu">
+    <br>
+    <button onclick="startBooth()">Ambil 3 Foto</button>
+    <button onclick="downloadStrip()">Download</button>
+</div>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
